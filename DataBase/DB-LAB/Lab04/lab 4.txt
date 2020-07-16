@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lab 04
+DBS
+Exercise of Select, Where, Update, Delete commands along with And/Or operations.
+You will use the same Company schema that has been shared with you all in Lab 02.
+Execute the following queries.
+1.	Retrieve the birth date and address of the employee(s) whose name is ‘John B. Smith’.
+2.	Retrieve the name and address of all employees who work for the ‘Research’ department.
+3.	For every project located in ‘stafford’, list the project number, the controlling department number, and the department manager’s last name. 
+4.	Retrieve the salary of every employee and all distinct salary values.
+5.	Make a list of all project numbers for projects that involve an employee whose last name is ‘Smith’  as a worker of the project.
+6.	Find all employees who were born during the 1950s.
+7.	Retrieve all employees in department no 5 whose salary is between $30,000 and $40,000.
+8.	Give all employees in department no. 5 a 10 percent raise in salary.
+9.	Delete the works_on tuple with Essn = ‘999887777’ and Pno = 10
+10.	Update the salary of the employee with Ssn = ‘99988777’ to 28000.
+11.	Update the Dno of the employee tuple with Ssn = ‘999887777’ to 1.
+12.	Modify the Super_ssn attribute of the employee tuple with Ssn = ‘999887777’ to ‘943775543’ and observe the result. 
+13.	Modify the hours attribute of the works_on tuple with Essn = ‘999887777’ and Pno = 10 to ‘5.0’. Observe the results.
+14.	Delete the project tuple with Pname = ‘ProductX’.
+15.	Delete the employee tuple with Ssn = ‘987654321’.
+16.	Delete the works_on tuple with Essn = ‘333445555’.
