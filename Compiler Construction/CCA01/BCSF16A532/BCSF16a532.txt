@@ -1,0 +1,8 @@
+I make a map of Transition Table.
+And traverse Through first state to Final State.
+And then check my final state in SS as SS changing from first state
+to final state according to the string index.
+For Null State i have to use _getch() so i can identify if user just 
+pressed enter.
+if user enter some number which is not in character set (0 and 1) program 
+will end.

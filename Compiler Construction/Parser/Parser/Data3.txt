@@ -1,0 +1,8 @@
+6 g h ^ b a d
+4 S A B C
+
+S
+S -> A C B | C b b | B a
+A -> d a | B C
+B -> g | ^
+C -> h | ^

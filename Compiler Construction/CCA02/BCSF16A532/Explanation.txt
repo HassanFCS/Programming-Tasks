@@ -1,0 +1,16 @@
+First of all i make a Struct of TT Basically its each State and it should
+be TS (Transition State)
+there is a char State and Vector of Set of NextStates.
+bool IsAccepting for check on which state we will be on final state.
+There is Class of NFA_Automata have a vector of Struct TT,,A String
+WA (Working Alphabets),,Char SS(Staring State),,string SA(State Alphabets)
+on which states i am working(ABCDT)
+WAIndex returns the WA index.
+SIndex returns State Alphabet index.
+StringAcceptable returns either we have to accept this string or not and also
+store States in queue Solutions.
+if i am on the final state and read another value from the Input string.
+i pop that string and didn't add into my Solution queue.
+Read reads the data from the File.
+PrintSolutions prints the strings in the queue.
+Print prints the Data about the string which we read from the file(Data).

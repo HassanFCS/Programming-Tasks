@@ -1,0 +1,9 @@
+5 b c y ^ $
+5 A X B C Y
+
+A
+A -> X Y
+X -> B C
+B -> b | ^
+C -> c | ^
+Y -> y

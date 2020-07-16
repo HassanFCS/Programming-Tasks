@@ -1,0 +1,9 @@
+6 + ^ * ( ) id
+5 E X T Y F
+
+E
+E -> T X
+X -> + T X | ^
+T -> F Y
+Y -> * F Y | ^
+F -> ( E ) | id
