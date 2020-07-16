@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile Application</title>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="Web Project">
+	<meta name="keywords" content="Login, signup">
+	<meta name="author" content="Sajjad Ali">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script src="bootstrap.js"></script>
+
+	<script type="text/javascript">
+		function showAddDiv(){
+			var x = document.getElementById("add");
+			  if (x.style.display === "none") {
+			    x.style.display = "block";
+			  } else {
+			    x.style.display = "none";
+			  }
+		}
+		function showSearchDiv(){
+			var x = document.getElementById("search");
+			  if (x.style.display === "none") {
+			    x.style.display = "block";
+			  } else {
+			    x.style.display = "none";
+			  }
+		}
+	</script>
+</head>
+<body>
+	<button type="button" class="btn btn-primary" onclick="showAddDiv()"> Add MObile </button>
+	
+
+	<div id="add" style="display: none;">
+		<form method="POST" action="Add">
+			<div class="form-group">
+				<label for="cname">Company Name:</label>
+				<input class="form-control" id="cname" type="text" name="cname" />
+			</div>
+
+			<div class="form-group">
+				<label for="model">Model:</label>
+				<input class="form-control" id="model" type="text" name="model" />
+			</div>
+
+			<div class="form-group">
+				<label for="price">Price:</label>
+				<input class="form-control" id="price" type="number" name="price" />
+			</div>
+
+			<button type="submit" class="btn btn-primary">Add MObile</button>
+		</form>
+	</div>
+
+	<br>
+
+	<button type="button" class="btn btn-danger" onclick="showSearchDiv()">Search MObile</button>
+	
+
+	<div id="search" style="display: none;">
+		<form method="POST" action="Search">
+			<div class="form-group">
+				<label for="cname">Company Name:</label>
+				<input class="form-control" id="cname" type="text" name="cname" />
+			</div>
+
+			<div class="form-group">
+				<label for="model">Model:</label>
+				<input class="form-control" id="model" type="text" name="model" />
+			</div>
+
+			<button type="submit" class="btn btn-danger">Search MObile</button>
+		</form>
+	</div>
+
+	<br>
+
+	<form action="Info" method="POST">
+		<button type="submit" class="btn btn-info">Info MObile</button>
+	</form>
+
+	
+
+</body>
+</html>
