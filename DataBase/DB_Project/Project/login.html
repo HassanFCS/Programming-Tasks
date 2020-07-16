@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script >
+			function MyFunc(){
+				document.getElementById("SCPro").style="display:none";
+				document.getElementById("SCLit").style="display:none";
+				document.getElementById("SCSports").style="display:none";
+				document.getElementById("SCFArts").style="display:none";
+			}
+			function MyFunc1(){
+				document.getElementById("SCLit").style="display:none";
+				document.getElementById("SCSports").style="display:none";
+				document.getElementById("SCFArts").style="display:none";
+				document.getElementById("SCPro").style="display:block";
+			}
+			function MyFunc2(){
+				document.getElementById("SCPro").style="display:none";
+				document.getElementById("SCSports").style="display:none";
+				document.getElementById("SCFArts").style="display:none";
+				document.getElementById("SCLit").style="display:block";
+			}
+			function MyFunc3(){
+				document.getElementById("SCLit").style="display:none";
+				document.getElementById("SCPro").style="display:none";
+				document.getElementById("SCFArts").style="display:none";
+				document.getElementById("SCSports").style="display:block";
+			}
+			function MyFunc4(){
+				document.getElementById("SCLit").style="display:none";
+				document.getElementById("SCSports").style="display:none";
+				document.getElementById("SCPro").style="display:none";
+				document.getElementById("SCFArts").style="display:block";
+			}
+	</script>
+
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="css\logincss.css">
+
+
+	<style>
+	body  {
+		background-image: url("riz8.jpg")
+	}
+	</style>	
+</head>
+<body>
+	<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">ROLL NUMBBER</label>
+					<input id="user" type="text" class="input">
+
+
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				<form action="SignUp.php" method="post" >
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input required id="user" Name="Stuname" type="text" class="input">
+				</div>
+
+               <div class="group">
+					<label for="user" class="label">ROLL NUMBER</label>
+					<input required id="user" Name="StuRollnumber"  type="text" class="input">
+				</div>
+
+				<div class="group">
+					<label for="user" class="label">CATEGORY</label>
+					<select id="user" class="input" Name="StuCat" style="color: black; font-style: bold; font-size: 20px">
+						<option id="SC" onclick="MyFunc()">Select Category</option>
+						<option value="Programming" onclick="MyFunc1()">Programming</option>
+						<option value="Literature" onclick="MyFunc2()">Literature</option>
+						<option value="Sports" onclick="MyFunc3()">Sports</option>
+						<option value="FineArts" onclick="MyFunc4()">Fine Arts</option>
+						</select>
+				</div>
+
+				<div id="SCPro" style="display: none;" class="group">
+					<label for="user" class="label">SUB-CATEGORY</label>
+							<input Name="StuSCat1" type=checkbox value="Speed Programming">Speed Programming
+							<input Name="StuSCat2" type=checkbox value="Debugging">Debugging
+				</div>
+
+				<div id="SCLit" style="display: none;" class="group">
+					<label for="user" class="label">SUB-CATEGORY</label>
+							<input Name="StuSCat1" type=checkbox value="NaatoQirrat">NaatoQirrat
+							<input Name="StuSCat2" type=checkbox value="Speech">Speech
+				</div>
+
+				<div id="SCSports" style="display: none;" class="group">
+					<label for="user" class="label">SUB-CATEGORY</label>
+							<input Name="StuSCat1" type=checkbox value="InDoor Games">InDoor Games
+							<input Name="StuSCat2" type=checkbox value="OutDoor Games">OutDoor Games
+				</div>
+
+				<div id="SCFArts" style="display: none;" class="group">
+					<label class="label">SUB-CATEGORY</label>
+							<input Name="StuSCat1" type=checkbox value="Fashion Design">Fashion Design
+							<input Name="StuSCat2" type=checkbox value="Graphic Design">Graphic Design
+				</div>
+
+				<div class="group">
+					<label for="user" class="label">EXPERIENCE</label>
+					<input id="user" Name="StuExperience" class="input">
+				</div>
+
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input required id="pass" Name="StuEmail" type="email" class="input">
+				</div>
+
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input required id="pass" Name="StuPassword" type="password" class="input" data-type="password">
+				</div>
+				
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				</form>
+				<div class="hr"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

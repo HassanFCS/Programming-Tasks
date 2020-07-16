@@ -1,0 +1,127 @@
+#container
+{
+	height: 200px;
+	
+}
+#logo img
+{
+	width: 150px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  text-decoration: none;
+}
+
+li {
+  
+  
+  margin-left: 35px;
+  float: left;
+  margin-right: -32px;
+  margin-top: 70px;
+  font-weight: bold;
+
+
+
+  
+
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+	
+	
+
+
+
+#box 
+{
+  width: 450px;
+  height: 200px;
+  margin-top: -75px;
+  margin-left: 30%;
+  font-weight: bold;
+
+  position: absolute;
+  }
+#box a
+{
+	text-decoration: none;
+}
+
+.button 
+{
+  display: inline-block;
+  border-radius: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-right: 40px;
+  margin-left: 80px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+  
+
+}
+
+.button span:after {
+  
+content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+
+
+
+}
+.button:hover
+{
+	background-color: white;
+	color:black;
+}
+
+.button:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+  } 
+
