@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#C9F007"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/R2Window"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_margin="50dp"
+        android:background="#A2AD17"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <Button
+        android:id="@+id/But2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:background="#E5EE71"
+        android:onClick="OnClick_Send"
+        android:text="Send"
+        app:layout_constraintBottom_toTopOf="@+id/R2Window"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_margin="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="#A2AD17"
+        android:textAlignment="center"
+        android:id="@+id/S2Window"
+        app:layout_constraintBottom_toTopOf="@+id/But2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
