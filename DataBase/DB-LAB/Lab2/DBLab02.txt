@@ -1,0 +1,167 @@
+create table Employee(
+    FName varchar(15),
+    Minit varchar(10),
+    LName varchar(15),
+    SSN Number(6) Primary Key Not NULL,
+    BDate Date,
+    Address varchar(20),
+    Sex varchar(6),
+    Salary Number(7),
+    SuperSSN Number(10),
+    DNo Number(6)
+);
+
+create table Department(
+    DName varchar(10),
+    DNumber Number(6) Primary Key Not NULL,
+    MgrSSN Number(6),
+    MgrStartDate Date
+);
+
+create table Dept_Locations(
+    DNumber Number(6) Primary Key Not NULL,
+    DLocation varchar(20)
+);
+
+create table Project(
+    PName varchar(10),
+    PNumber Number(6) Primary Key Not NULL,
+    PLocation varchar(20),
+    DNum Number(6)
+);
+
+create table WorksOn(
+    ESSN Number(6) Primary Key Not NULL,
+    PNo Number(6),
+    Hours Number(3)
+);
+
+create table Dependent(
+    ESSN Number(6) Primary Key Not NULL,
+    DependentName varchar(6),
+    Sex varchar(6),
+    BDate Date,
+    Relationship varchar(10)
+);
+
+
+
+
+
+
+
+
+
+
+
+Data 
+
+Emplyee
+John , B , Smith , 123456789 , 1/9/1965, 731Fondren,Houston,TX , M , 30000 , 333445555 , 5
+insert into Employee
+values('John' , 'B' , 'Smith' , 12345 , To_Date('1/9/1965','dd-mm-yyyy'), '7Fondren,Hoston,TX' , 'M' , 30000 , 333445555 , 5);
+
+
+Franklin , T , Wong , 333445555 , 12/8/1955 , 638Voss,Houston,TX , M , 40000 , 888665555 , 5
+insert into Employee
+values('Franklin' , 'T' , 'Wong' , 33344 , To_Date('12/8/1955','dd-mm-yyyy'), '6Voss,Hoston,TX' , 'M' , 40000 , 888665555 , 5);
+
+Alicia , J , Zelaya , 999887777 , 1/19/1968 , 3321Castle,SpringTX , F , 25000 , 987654321 , 4
+insert into Employee
+values('Alicia' , 'J' , 'Zelaya' , 99988 , To_Date('19/1/1968','dd-mm-yyyy'), '3Castl,Hoston,TX' , 'F' , 25000 , 987654321 , 4);
+
+
+Jennifer , S , Wallace , 987654321 , 6/20/1941 , 291Berry,Bellaire,TX , F , 43000 , 888665555 , 4
+insert into Employee
+values('Jenifer' , 'S' , 'Wallace' , 98765 , To_Date('20/6/1941','dd-mm-yyyy'), '2Bery,Belarie,TX' , 'F' , 43000 , 888665555 , 4);
+
+
+Ramesh , K , Narayan , 666884444 , 9/15/1962 , 975FireOak,Humble,TX , M , 38000 , 333445555 , 5
+insert into Employee
+values('Ramesha' , 'K' , 'Narayan' , 66688 , To_Date('15/9/1962','dd-mm-yyyy'), '9FireOak,Hmbl,TX' , 'M' , 38000 , 333445555 , 5);
+
+
+Joyce , A , English , 453453453 , 7/31/1972 , 5631Rice,Houston,TX , F , 25000 , 333445555 , 5
+insert into Employee
+values('Joyce' , 'A' , 'English' , 45345 , To_Date('31/7/1972','dd-mm-yyyy'), '5Rice,Huston,TX' , 'F' , 25000 , 333445555 , 5);
+
+
+Ahmad , V , Jabbar , 987987987 , 3/29/1969 , 980Dallas,Houston,TX , M , 25000 , 987654321 , 4
+insert into Employee
+values('Ahmad' , 'V' , 'Jabbar' , 98798 , To_Date('29/3/1969','dd-mm-yyyy'), '9Dalas,Huston,TX' , 'M' , 25000 , 987654321 , 4);
+
+
+James , E , Borg , 888665555 , 11/10/1937 , 450Stone,Houston,TX , M , 55000 , 1
+insert into Employee
+values('James' , 'E' , 'Borg' , 88866 , To_Date('11/10/1969','dd-mm-yyyy'), '4Stone,Huston,TX' , 'M' , 55000 , , 1);
+
+
+
+Dapartment
+
+Research	5	333445555	5/22/1988
+insert into Department
+values('Research' , 5 , 33344 , To_Date('22/5/1988','dd-mm-yyyy'));
+
+
+Administration	4	987654321	1/1/1995
+insert into Department
+values('Admnstrtn' , 4 , 98765 , To_Date('1/1/1995','dd-mm-yyyy'));
+
+
+Headquarters	1	888665555	6/19/1981
+insert into Department
+values('Hedqutars' , 1 , 88866 , To_Date('19/6/1981','dd-mm-yyyy'));
+
+
+
+Dpt_Loc
+
+1	Houston
+insert into Dept_Locations
+values (1 , 'Huston');
+
+4	Stafford
+insert into Dept_Locations
+values (4 , 'Staford');
+
+5	Bellaire
+insert into Dept_Locations
+values (5 , 'Bellaire');
+
+5	Sugarland
+insert into Dept_Locations
+values (2 , 'Sugarland');
+
+5	Houston
+insert into Dept_Locations
+values (3 , 'Huston');
+
+
+
+Project
+
+ProductX	1	Bellaire	5
+insert into Project
+values ('ProductX' , 1 , 'Bellaire' , 5);
+
+ProductY	2	Sugarland	5
+insert into Project
+values ('ProductY' , 2 , 'Sugarland' , 5);
+
+ProductZ	3	Houston	5
+insert into Project
+values ('ProductZ' , 3 , 'Huston' , 5);
+
+Computerization	10	Stafford	4
+insert into Project
+values ('Cmptrztion' , 10 , 'Staford' , 4);
+
+Reorganization	20	Houston	1
+insert into Project
+values ('Reorgton' , 20 , 'Huston' , 1);
+
+Newbenefits	30	Stafford	4
+insert into Project
+values ('Nebenfit' , 30 , 'Staford' , 4);
+

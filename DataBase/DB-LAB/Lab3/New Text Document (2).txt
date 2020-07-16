@@ -1,0 +1,36 @@
+values ('ProductX',	1,	'Bellaire',	5);
+values ('ProductY',	2,	'Sugarland',	5);
+values ('ProductZ',	3,	'Houston',	5);
+values ('Computerization',	10,	'Stafford',	4);
+values ('Reorganization',	20,	'Houston',	1);
+values ('Newbenefits',	30,	'Stafford',	4);
+
+
+
+
+values (333445555,	'Alice',	'F',	To_date('1986-04-05','YYYY-MM-DD'),	'Daughter');
+values (333445555,	'Theodore',	'M',	To_date('1983-10-25','YYYY-MM-DD'),	'Son');
+values (333445555,	'Joy',		'F',	To_date('1958-05-25','YYYY-MM-DD'),	'Spouse');
+values (987654321,	'Abner',	'M',	To_date('1942-02-28','YYYY-MM-DD'),	'Spouse');
+values (123456789,	'Michael',	'M',	To_date('1988-01-04','YYYY-MM-DD'),	'Son');
+values (123456789,	'Alice',	'F',	To_date('1988-12-30','YYYY-MM-DD'),	'Daughter');
+values (123456789,	'Elizabeth',	'F',	To_date('1967-05-05','YYYY-MM-DD'),	'Spouse');
+
+
+
+
+alter 
+
+
+
+
+
+yyyy-mm-dd
+
+values ('John'	,'B'	,'Smith',	123456789,To_date('1965-09-01','YYYY-MM-DD'),	'731Fondren,Houston,TX',	'M',	30000,	333445555,	5);
+
+
+To_date('1962-09-15','YYYY-MM-DD')
+
+INSERT INTO WORKS_ON
+VALUES

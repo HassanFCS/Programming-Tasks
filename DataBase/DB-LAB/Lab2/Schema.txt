@@ -1,0 +1,32 @@
+Company Schema
+
+Employee Table
+Fname, Minit, Lname, Ssn, Bdate, Address, Sex, Salary, Super_Ssn, Dno
+
+Department
+Dname, Dnumber, Mgr_ssn, Mgr_start_date
+
+Dept_Locations
+Dnumber, Dlocation
+
+Project
+Pname, Pnumber, Plocation, Dnum
+
+Works_ON
+Essn, Pno, Hours
+
+Dependent
+Essn, Dependent_name, Sex, Bdate, Relationship
+
+
+Data Dictionary
+Fname First Name
+Lname Last Name
+Ssn   Social Security Number
+Dnumber Department Number
+DNo     Department Number
+Pnumber Project Number
+Pno     Project Number
+Dlocation Department Location
+Superssn Supervisor Social Security Number
+Esssn  Employee social security number
