@@ -1,0 +1,12 @@
+-----------------
+   Instructions
+-----------------
+
+1. You have to decide between "0" to "6".
+2. Your slot will be filled according to your entered value.
+3. Then Computer will run it's turn.
+4. It will keep going until someone wins.
+5. Winner will be decided who makes the pair of 4 first.
+   Pair could be horizontal or vertical.
+   
+   Enjoy!
